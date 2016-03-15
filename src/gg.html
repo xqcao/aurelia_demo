@@ -1,0 +1,7 @@
+<template>
+ <ul>
+   <li repeat.for="item of repos">
+     <a href.bind="item.html_url">${item.name}</a>
+   </li>
+ </ul>
+</template>

@@ -1,0 +1,15 @@
+<template>
+ <table>
+    <tr>
+	<th>Index</th>
+        <th>Repo_name</th>
+	<th>Description</th>
+    </tr>
+    <tr repeat.for="its of repos">
+	<td>${$index}</td>
+        <td href.bind="its.html_url">${its.name}</td>
+	<td>${its.description}</td>
+</tr>
+</table>
+
+</template>
